@@ -1,0 +1,35 @@
+server:
+  port: 8084
+
+spring:
+  application:
+    name: CamundaProject
+  artemis:
+    user: artemis
+    password: artemis
+
+  datasource:
+    url: jdbc:h2:mem:family
+    driverClassName: org.h2.Driver
+    username: sa
+    password: password
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+ # config:
+ #   import: 'optional:configserver:'
+ # cloud:
+ #   config:
+ #     uri: http://localhost:8888
+ #     # Stop the application if it can't connect to the config server
+ #     fail-fast: true
+  liquibase:
+    drop-first: true
+
+camunda:
+  bpm:
+    admin-user:
+      id: demo
+      first-name: Tima
+      last-name: Zaytsev
+      password: demo
+

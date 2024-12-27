@@ -1,0 +1,102 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: timazay
+      changes:
+        - createTable:
+            tableName: family
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: unique_name
+                  type: varchar(255)
+        - createTable:
+            tableName: child
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: username
+                  type: varchar(255)
+              - column:
+                  name: password
+                  type: varchar(255)
+              - column:
+                  name: family_id
+                  type: bigint
+            foreignKeys:
+              - foreignKey:
+                  name: fk_child_family
+                  referencedTable: family
+                  referencedColumn: id
+                  column: family_id
+
+        - createTable:
+            tableName: parent
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: username
+                  type: varchar(255)
+              - column:
+                  name: password
+                  type: varchar(255)
+              - column:
+                  name: family_id
+                  type: bigint
+            foreignKeys:
+              - foreignKey:
+                  name: fk_parent_family
+                  referencedTable: family
+                  referencedColumn: id
+                  column: family_id
+        - createTable:
+            tableName: task
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: title
+                  type: varchar(255)
+              - column:
+                  name: description
+                  type: text
+              - column:
+                  name: report
+                  type: text
+              - column:
+                  name: is_complete
+                  type: boolean
+                  constraints:
+                    defaultValueBoolean: false
+              - column:
+                  name: child_id
+                  type: bigint
+            foreignKeys:
+              - foreignKey:
+                  name: fk_task_child
+                  referencedTable: child
+                  referencedColumn: id
+                  column: child_id

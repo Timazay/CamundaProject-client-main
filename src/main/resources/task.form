@@ -1,0 +1,52 @@
+{
+  "components": [
+    {
+      "text": "# Напишите задание?",
+      "type": "text",
+      "layout": {
+        "row": "Row_0a52lv2",
+        "columns": null
+      },
+      "id": "Field_0w8322y"
+    },
+    {
+      "label": "Название задания:",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_0qzvwzq",
+        "columns": null
+      },
+      "id": "Field_1wcr7za",
+      "key": "title"
+    },
+    {
+      "label": "Описание задания:",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1050z8l",
+        "columns": null
+      },
+      "id": "Field_0csrn0j",
+      "key": "description"
+    },
+    {
+      "label": "Отправить",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_127jc5t",
+        "columns": null
+      },
+      "id": "Field_0zlpehi"
+    }
+  ],
+  "type": "default",
+  "id": "task",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

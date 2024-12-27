@@ -1,0 +1,42 @@
+{
+  "components": [
+    {
+      "text": "# Наиши отчет:",
+      "type": "text",
+      "layout": {
+        "row": "Row_1di6v6t",
+        "columns": null
+      },
+      "id": "Field_0dbha1b"
+    },
+    {
+      "label": "Отчет",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_03ioc3y",
+        "columns": null
+      },
+      "id": "Field_1lco3y7",
+      "key": "report"
+    },
+    {
+      "label": "Отправить",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1q304mc",
+        "columns": null
+      },
+      "id": "Field_034tzcf"
+    }
+  ],
+  "type": "default",
+  "id": "reports",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

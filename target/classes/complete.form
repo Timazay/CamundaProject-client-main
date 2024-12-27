@@ -1,0 +1,42 @@
+{
+  "components": [
+    {
+      "text": "# Вы выполнили задание?",
+      "type": "text",
+      "layout": {
+        "row": "Row_1oc3ncb",
+        "columns": null
+      },
+      "id": "Field_1tsbran"
+    },
+    {
+      "label": "Выполнил",
+      "type": "checkbox",
+      "layout": {
+        "row": "Row_1vndwk4",
+        "columns": null
+      },
+      "id": "Field_10mxzj8",
+      "key": "isAccept"
+    },
+    {
+      "label": "Готово",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1rkrlsd",
+        "columns": null
+      },
+      "id": "Field_1g1e9va"
+    }
+  ],
+  "type": "default",
+  "id": "complete",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

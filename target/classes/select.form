@@ -1,0 +1,56 @@
+{
+  "components": [
+    {
+      "text": "# Выберите действие:",
+      "type": "text",
+      "layout": {
+        "row": "Row_1ww7hys",
+        "columns": 9
+      },
+      "id": "Field_0b3w4ei"
+    },
+    {
+      "label": "Что хотите сделать:",
+      "values": [
+        {
+          "label": "Создать задание",
+          "value": "CREATE"
+        },
+        {
+          "label": "Отменить задание",
+          "value": "CANCEL"
+        },
+        {
+          "label": "Изменить задание",
+          "value": "UPDATE"
+        }
+      ],
+      "type": "select",
+      "layout": {
+        "row": "Row_0jizk1i",
+        "columns": null
+      },
+      "id": "Field_1991h1j",
+      "key": "type"
+    },
+    {
+      "label": "Подтвердить",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_0jizk1i",
+        "columns": 5
+      },
+      "id": "Field_1q8ou70"
+    }
+  ],
+  "type": "default",
+  "id": "select",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

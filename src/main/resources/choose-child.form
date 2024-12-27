@@ -1,0 +1,42 @@
+{
+  "components": [
+    {
+      "text": "Введите имя вашего ребенка:",
+      "type": "text",
+      "layout": {
+        "row": "Row_1vxvtyu",
+        "columns": null
+      },
+      "id": "Field_0qy8my0"
+    },
+    {
+      "label": "Имя",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_1nob6x2",
+        "columns": null
+      },
+      "id": "Field_0obxo6z",
+      "key": "childName"
+    },
+    {
+      "label": "Подтвердить",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_1yprj85",
+        "columns": null
+      },
+      "id": "Field_0ifkqze"
+    }
+  ],
+  "type": "default",
+  "id": "choose-child",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "executionPlatform": "Camunda Platform",
+  "executionPlatformVersion": "7.22.0",
+  "schemaVersion": 17
+}

@@ -1,0 +1,33 @@
+{
+  "components": [
+    {
+      "label": "Пин Код",
+      "type": "textfield",
+      "layout": {
+        "row": "Row_17l1w8b",
+        "columns": null
+      },
+      "id": "Field_1bgf1qv",
+      "key": "pin"
+    },
+    {
+      "label": "Вход",
+      "action": "submit",
+      "type": "button",
+      "layout": {
+        "row": "Row_19jmfr8",
+        "columns": null
+      },
+      "id": "Field_1j76jtp"
+    }
+  ],
+  "type": "default",
+  "id": "form_pin",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.6.0",
+  "exporter": {
+    "name": "Camunda Modeler",
+    "version": "5.30.0"
+  },
+  "schemaVersion": 17
+}
